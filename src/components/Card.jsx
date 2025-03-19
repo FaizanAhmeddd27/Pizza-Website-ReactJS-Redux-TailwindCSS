@@ -14,18 +14,18 @@ const Card = ({ id, name, price, desc, rat, img, handleToast }) => {
           className='w-full h-[140px] object-cover rounded-md hover:scale-110 cursor-grab transition-all ease-in-out  duration-500'  
         />
   
-        {/* Name and Price */}
+     
         <div className='flex justify-between items-center mt-2'>
           <p className='font-semibold'>{name}</p>
           <span className='text-green-400 font-bold'>Rs {price}</span>
         </div>
   
-        {/* Description */}
+        
         <p className='text-sm text-gray-600 mt-1 desc'>
           {desc.slice(0, 50)}...
         </p>
   
-        {/* Rating and Add to Cart Button */}
+       
         <div className='flex items-center justify-between mt-2'>
           <span className='font-semibold flex items-center gap-1'>
             <FaStar className='text-yellow-500' /> {rat}

@@ -17,7 +17,7 @@ const FoodItems = () => {
     <>
       <Toaster position="top-center" reverseOrder={false} />
 
-      <div className='flex flex-col ml-13 md:flex-row flex-wrap gap-1 px-6'>
+      <div className='flex justify-center items-center flex-col mr-9 md:flex-row flex-wrap gap-1 px-6'>
         {
         FoodData.filter((food) => {
           if (category === "All") {
@@ -26,7 +26,7 @@ const FoodItems = () => {
             return food.category === category && food.name.toLowerCase().includes(search.toLowerCase());
           }
         }).map((food) => (
-          <Card
+          <Card 
             key={food.id}
             id={food.id}
             desc={food.desc}

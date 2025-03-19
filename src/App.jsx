@@ -9,7 +9,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        {/* Redirect from '/' to '/home' */}
+        
         <Route path="/" element={<Navigate to="/home" />} />
         <Route path="/home" element={<Home />} />
         <Route path="/success" element={<ProtectedRoute element={<Success />} />} />
